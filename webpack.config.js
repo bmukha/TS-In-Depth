@@ -6,6 +6,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
 
+    experiments: {
+        topLevelAwait: true
+    },
+
     // basedir
     context: path.resolve(__dirname, 'src'),
 
